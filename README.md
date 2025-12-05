@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.png" alt="Lucid.js" width="480">
+</p>
+
 <h1 align="center">Lucid.js</h1>
 
 <p align="center">Offline-first data layer for React Native and Web.</p>
