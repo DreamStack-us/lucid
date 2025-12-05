@@ -2,6 +2,12 @@
 
 <p align="center">Offline-first data layer for React Native and Web.</p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/@dreamstack/lucid-core"><img src="https://img.shields.io/npm/v/@dreamstack/lucid-core?label=npm&color=cb3837" alt="npm"></a>
+  <a href="https://github.com/DreamStack-us/lucid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="license"></a>
+  <a href="https://github.com/DreamStack-us/lucid"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs welcome"></a>
+</p>
+
 > **Status:** Pre-release. Testing in internal projects before public release.
 
 ## Packages
