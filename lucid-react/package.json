@@ -1,0 +1,27 @@
+{
+  "name": "@dreamstack/lucid-react",
+  "version": "0.1.0",
+  "description": "React hooks for Lucid.js - useLucid, useLucidQuery, etc.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dreamstack/lucid-core": "*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "~5.3.3"
+  },
+  "keywords": [
+    "lucid",
+    "react",
+    "hooks",
+    "offline-first"
+  ],
+  "license": "MIT"
+}

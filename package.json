@@ -1,0 +1,27 @@
+{
+  "name": "lucid",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Lucid.js - Offline-first data layer for React Native and Web",
+  "workspaces": [
+    "lucid-core",
+    "lucid-react",
+    "lucid-react-native",
+    "lucid-supabase"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "keywords": [
+    "offline-first",
+    "local-first",
+    "sqlite",
+    "supabase",
+    "sync",
+    "react-native",
+    "react"
+  ],
+  "author": "DreamStack",
+  "license": "MIT"
+}

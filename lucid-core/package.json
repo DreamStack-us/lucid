@@ -1,0 +1,31 @@
+{
+  "name": "@dreamstack/lucid-core",
+  "version": "0.1.0",
+  "description": "Core engine for Lucid.js - offline-first data layer",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./types": "./src/types/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "zod": ">=3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.3.3",
+    "zod": "^3.23.8"
+  },
+  "keywords": [
+    "offline-first",
+    "local-first",
+    "sqlite",
+    "supabase",
+    "sync",
+    "cache"
+  ],
+  "license": "MIT"
+}
