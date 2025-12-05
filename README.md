@@ -1,6 +1,6 @@
-# Lucid.js
+<h1 align="center">Lucid.js</h1>
 
-Offline-first data layer for React Native and Web.
+<p align="center">Offline-first data layer for React Native and Web.</p>
 
 > **Status:** Pre-release. Testing in internal projects before public release.
 
