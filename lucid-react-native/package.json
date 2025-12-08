@@ -1,5 +1,5 @@
 {
-  "name": "@dreamstack/lucid-react-native",
+  "name": "@dreamstack-us/lucid-react-native",
   "version": "0.1.0",
   "description": "React Native adapter for Lucid.js - uses expo-sqlite",
   "main": "dist/index.js",
@@ -28,7 +28,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack/lucid-core": "^0.1.0"
+    "@dreamstack-us/lucid-core": "^0.1.0"
   },
   "peerDependencies": {
     "expo-sqlite": ">=15.0.0",

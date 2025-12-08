@@ -12,6 +12,6 @@ export default defineConfig({
     "react",
     "react-native",
     "expo-sqlite",
-    "@dreamstack/lucid-core",
+    "@dreamstack-us/lucid-core",
   ],
 });

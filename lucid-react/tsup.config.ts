@@ -8,5 +8,5 @@ export default defineConfig({
   sourcemap: true,
   splitting: false,
   treeshake: true,
-  external: ["react", "@dreamstack/lucid-core"],
+  external: ["react", "@dreamstack-us/lucid-core"],
 });

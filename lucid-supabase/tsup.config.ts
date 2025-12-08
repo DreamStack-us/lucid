@@ -8,5 +8,5 @@ export default defineConfig({
   sourcemap: true,
   splitting: false,
   treeshake: true,
-  external: ["@supabase/supabase-js", "@dreamstack/lucid-core"],
+  external: ["@supabase/supabase-js", "@dreamstack-us/lucid-core"],
 });
