@@ -180,8 +180,8 @@ export function useLucidMutation<T extends Record<string, unknown>, TInput = Omi
 
       try {
         let result: T;
-        const id = (input as any).id || generateId();
-        const data = { ...input, id } as T;
+        const id = (input as Record<string, unknown>).id as string || generateId();
+        const data = { ...input, id } as unknown as T;
 
         switch (operation) {
           case 'INSERT':

@@ -2,13 +2,33 @@
   "name": "@dreamstack/lucid-react-native",
   "version": "0.1.0",
   "description": "React Native adapter for Lucid.js - uses expo-sqlite",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack/lucid-core": "*"
+    "@dreamstack/lucid-core": "^0.1.0"
   },
   "peerDependencies": {
     "expo-sqlite": ">=15.0.0",
@@ -17,6 +37,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
+    "tsup": "^8.3.5",
     "typescript": "~5.3.3"
   },
   "keywords": [
