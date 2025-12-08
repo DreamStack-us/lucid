@@ -1,6 +1,6 @@
 {
   "name": "@dreamstack-us/lucid-supabase",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Supabase connector for Lucid.js - sync with Supabase backend",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,7 +28,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack-us/lucid-core": "^0.1.0"
+    "@dreamstack-us/lucid-core": "^0.0.1"
   },
   "peerDependencies": {
     "@supabase/supabase-js": ">=2.0.0"
