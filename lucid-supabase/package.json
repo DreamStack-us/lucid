@@ -44,5 +44,8 @@
     "sync",
     "offline-first"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

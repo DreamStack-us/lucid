@@ -63,5 +63,8 @@
     "sync",
     "cache"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
