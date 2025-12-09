@@ -230,7 +230,7 @@ export interface LucidStore {
   get<T>(table: string, id: string): Promise<T | null>;
   getAll<T>(table: string): Promise<T[]>;
   query<T>(table: string, where: Record<string, unknown>): Promise<T[]>;
-  insert<T>(table: string, data: T): Promise<void>;
+  insert<T extends Record<string, unknown>>(table: string, data: T): Promise<void>;
   update(table: string, id: string, data: Record<string, unknown>): Promise<void>;
   delete(table: string, id: string): Promise<void>;
 
