@@ -5,6 +5,7 @@
  */
 
 import * as SQLite from 'expo-sqlite';
+import type { SQLiteBindValue, SQLiteBindParams } from 'expo-sqlite';
 import type { LucidStore, LucidSchema, CrudEntry, TableDefinition } from '@dreamstack/lucid-core';
 
 const DB_NAME = 'lucid.db';
@@ -128,7 +129,7 @@ export class SQLiteStore implements LucidStore {
   async query<T>(table: string, where: Record<string, unknown>): Promise<T[]> {
     const db = await this.getDb();
     const conditions = Object.keys(where).map((k) => `${k} = ?`);
-    const values = Object.values(where);
+    const values = Object.values(where) as SQLiteBindValue[];
     const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
     return db.getAllAsync<T>(`SELECT * FROM ${table} ${whereClause}`, values);
   }
@@ -137,7 +138,7 @@ export class SQLiteStore implements LucidStore {
     const db = await this.getDb();
     const columns = Object.keys(data);
     const placeholders = columns.map(() => '?');
-    const values = Object.values(data);
+    const values = Object.values(data) as SQLiteBindValue[];
 
     await db.runAsync(
       `INSERT INTO ${table} (${columns.join(', ')}, _updated_at) VALUES (${placeholders.join(', ')}, ?)`,
@@ -148,7 +149,7 @@ export class SQLiteStore implements LucidStore {
   async update(table: string, id: string, data: Record<string, unknown>): Promise<void> {
     const db = await this.getDb();
     const sets = Object.keys(data).map((k) => `${k} = ?`);
-    const values = Object.values(data);
+    const values = Object.values(data) as SQLiteBindValue[];
 
     await db.runAsync(
       `UPDATE ${table} SET ${sets.join(', ')}, _updated_at = ? WHERE id = ?`,
@@ -178,7 +179,7 @@ export class SQLiteStore implements LucidStore {
     const sql = `INSERT OR REPLACE INTO ${table} (${columns.join(', ')}, _synced, _updated_at) VALUES (${placeholders.join(', ')}, 1, ?)`;
 
     for (const row of rows) {
-      const values = columns.map((c) => row[c]);
+      const values = columns.map((c) => row[c]) as SQLiteBindValue[];
       await db.runAsync(sql, [...values, Date.now()]);
     }
   }
@@ -255,7 +256,7 @@ export class SQLiteStore implements LucidStore {
   // Utilities
   // ─────────────────────────────────────────────────────────────────────────
 
-  async executeRaw<T>(sql: string, params: unknown[] = []): Promise<T[]> {
+  async executeRaw<T>(sql: string, params: SQLiteBindValue[] = []): Promise<T[]> {
     const db = await this.getDb();
     return db.getAllAsync<T>(sql, params);
   }

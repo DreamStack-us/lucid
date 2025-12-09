@@ -1,7 +1,7 @@
 {
   "name": "lucid",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Lucid.js - Offline-first data layer for React Native and Web",
   "workspaces": [
     "lucid-core",
@@ -11,7 +11,12 @@
   ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces",
-    "build": "npm run build --workspaces --if-present"
+    "build": "npm run build --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5"
   },
   "keywords": [
     "offline-first",
