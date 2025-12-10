@@ -13,13 +13,13 @@ import React, {
   useCallback,
   ReactNode,
 } from 'react';
-import type {
-  LucidSchema,
-  LucidStore,
-  LucidConnector,
-  SyncStatus,
+import {
   UploadQueue,
-  QueueProcessor,
+  type LucidSchema,
+  type LucidStore,
+  type LucidConnector,
+  type SyncStatus,
+  type QueueProcessor,
 } from '@dreamstack-us/lucid-core';
 
 // ============================================================================
@@ -107,8 +107,6 @@ export function LucidProvider({
 
   // Create upload queue
   const queue = useMemo(() => {
-    // Import dynamically to avoid circular deps
-    const { UploadQueue } = require('@dreamstack-us/lucid-core');
     return new UploadQueue(store);
   }, [store]);
 
