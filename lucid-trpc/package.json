@@ -1,7 +1,7 @@
 {
-  "name": "@dreamstack-us/lucid-supabase",
+  "name": "@dreamstack-us/lucid-trpc",
   "version": "0.0.1",
-  "description": "Supabase connector for Lucid.js - sync with Supabase backend",
+  "description": "tRPC connector for Lucid.js - bidirectional sync with tRPC backends",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -31,19 +31,20 @@
     "@dreamstack-us/lucid-core": "^0.0.1"
   },
   "peerDependencies": {
-    "@supabase/supabase-js": ">=2.0.0"
+    "@trpc/client": ">=10.0.0"
   },
   "devDependencies": {
-    "@supabase/supabase-js": "^2.46.0",
-    "@types/node": "^24.10.2",
+    "@trpc/client": "^10.45.0",
+    "@trpc/server": "^10.45.0",
     "tsup": "^8.3.5",
     "typescript": "~5.3.3"
   },
   "keywords": [
     "lucid",
-    "supabase",
+    "trpc",
     "sync",
-    "offline-first"
+    "offline-first",
+    "local-first"
   ],
   "license": "MIT",
   "publishConfig": {

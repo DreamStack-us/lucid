@@ -7,13 +7,15 @@
     "lucid-core",
     "lucid-react",
     "lucid-react-native",
-    "lucid-supabase"
+    "lucid-supabase",
+    "lucid-web",
+    "lucid-trpc"
   ],
   "scripts": {
-    "typecheck": "npm run typecheck --workspaces",
-    "build": "npm run build --workspaces --if-present",
-    "clean": "npm run clean --workspaces --if-present",
-    "prepublish": "npm run build"
+    "typecheck": "bun run --filter '*' typecheck",
+    "build": "bun run --cwd lucid-core build && bun run --filter '!@dreamstack-us/lucid-core' build",
+    "clean": "bun run --filter '*' clean",
+    "prepublish": "bun run build"
   },
   "devDependencies": {
     "tsup": "^8.3.5"
@@ -23,9 +25,12 @@
     "local-first",
     "sqlite",
     "supabase",
+    "trpc",
+    "indexeddb",
     "sync",
     "react-native",
-    "react"
+    "react",
+    "web"
   ],
   "author": "DreamStack",
   "license": "MIT"
