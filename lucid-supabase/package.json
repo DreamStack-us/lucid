@@ -1,6 +1,6 @@
 {
   "name": "@dreamstack-us/lucid-supabase",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Supabase connector for Lucid.js - sync with Supabase backend",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

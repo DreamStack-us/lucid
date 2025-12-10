@@ -1,6 +1,6 @@
 {
   "name": "@dreamstack-us/lucid-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core engine for Lucid.js - offline-first data layer",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
