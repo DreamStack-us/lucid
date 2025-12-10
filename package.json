@@ -15,9 +15,13 @@
     "typecheck": "bun run --filter '*' typecheck",
     "build": "bun run --cwd lucid-core build && bun run --filter '!@dreamstack-us/lucid-core' build",
     "clean": "bun run --filter '*' clean",
-    "prepublish": "bun run build"
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "bun run build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
     "tsup": "^8.3.5"
   },
   "keywords": [

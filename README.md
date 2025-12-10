@@ -7,7 +7,7 @@
 <p align="center">Offline-first data layer for React Native and Web.</p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@dreamstack/lucid-core"><img src="https://img.shields.io/npm/v/@dreamstack/lucid-core?label=npm&color=cb3837" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/@dreamstack-us/lucid-core"><img src="https://img.shields.io/npm/v/@dreamstack-us/lucid-core?label=npm&color=cb3837" alt="npm"></a>
   <a href="https://github.com/DreamStack-us/lucid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="license"></a>
   <a href="https://github.com/DreamStack-us/lucid"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs welcome"></a>
 </p>
@@ -16,12 +16,14 @@
 
 ## Packages
 
-| Package | Description |
-|---------|-------------|
-| `@dreamstack/lucid-core` | Core engine - types, schema API, upload queue |
-| `@dreamstack/lucid-react` | React bindings - LucidProvider, hooks |
-| `@dreamstack/lucid-react-native` | React Native SQLite store (expo-sqlite) |
-| `@dreamstack/lucid-supabase` | Supabase connector and sync manager |
+| Package | Version | Description |
+|---------|---------|-------------|
+| [`@dreamstack-us/lucid-core`](https://www.npmjs.com/package/@dreamstack-us/lucid-core) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-core)](https://www.npmjs.com/package/@dreamstack-us/lucid-core) | Core engine - types, schema API, upload queue |
+| [`@dreamstack-us/lucid-react`](https://www.npmjs.com/package/@dreamstack-us/lucid-react) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-react)](https://www.npmjs.com/package/@dreamstack-us/lucid-react) | React bindings - LucidProvider, hooks |
+| [`@dreamstack-us/lucid-react-native`](https://www.npmjs.com/package/@dreamstack-us/lucid-react-native) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-react-native)](https://www.npmjs.com/package/@dreamstack-us/lucid-react-native) | React Native SQLite store (expo-sqlite) |
+| [`@dreamstack-us/lucid-supabase`](https://www.npmjs.com/package/@dreamstack-us/lucid-supabase) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-supabase)](https://www.npmjs.com/package/@dreamstack-us/lucid-supabase) | Supabase connector and sync manager |
+| [`@dreamstack-us/lucid-web`](https://www.npmjs.com/package/@dreamstack-us/lucid-web) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-web)](https://www.npmjs.com/package/@dreamstack-us/lucid-web) | Browser store (IndexedDB via localForage) |
+| [`@dreamstack-us/lucid-trpc`](https://www.npmjs.com/package/@dreamstack-us/lucid-trpc) | [![npm](https://img.shields.io/npm/v/@dreamstack-us/lucid-trpc)](https://www.npmjs.com/package/@dreamstack-us/lucid-trpc) | tRPC connector for bidirectional sync |
 
 ## Philosophy
 
@@ -33,7 +35,7 @@
 ## Data Categories
 
 ```typescript
-import { schema, table, column } from '@dreamstack/lucid-core';
+import { schema, table, column } from '@dreamstack-us/lucid-core';
 
 export const mySchema = schema({
   // Reference data - time-based cache (24h), background sync
@@ -60,8 +62,8 @@ export const mySchema = schema({
 
 ```typescript
 // App.tsx
-import { LucidProvider } from '@dreamstack/lucid-react';
-import { SQLiteStore } from '@dreamstack/lucid-react-native';
+import { LucidProvider } from '@dreamstack-us/lucid-react';
+import { SQLiteStore } from '@dreamstack-us/lucid-react-native';
 import { mySchema } from './schema';
 
 const store = new SQLiteStore();
@@ -75,7 +77,7 @@ export default function App() {
 }
 
 // Component.tsx
-import { useLucidQuery, useLucidMutation } from '@dreamstack/lucid-react';
+import { useLucidQuery, useLucidMutation } from '@dreamstack-us/lucid-react';
 
 function ProductList() {
   const { data: products, isLoading } = useLucidQuery('products');
