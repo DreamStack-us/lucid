@@ -1,7 +1,7 @@
 {
-  "name": "@dreamstack-us/lucid-supabase",
+  "name": "@dreamstack-us/lucid-web",
   "version": "0.0.1",
-  "description": "Supabase connector for Lucid.js - sync with Supabase backend",
+  "description": "Browser store for Lucid.js using IndexedDB via localForage",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -28,22 +28,20 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack-us/lucid-core": "^0.0.1"
-  },
-  "peerDependencies": {
-    "@supabase/supabase-js": ">=2.0.0"
+    "@dreamstack-us/lucid-core": "^0.0.1",
+    "localforage": "^1.10.0"
   },
   "devDependencies": {
-    "@supabase/supabase-js": "^2.46.0",
-    "@types/node": "^24.10.2",
     "tsup": "^8.3.5",
     "typescript": "~5.3.3"
   },
   "keywords": [
     "lucid",
-    "supabase",
-    "sync",
-    "offline-first"
+    "localforage",
+    "indexeddb",
+    "offline-first",
+    "web",
+    "browser"
   ],
   "license": "MIT",
   "publishConfig": {

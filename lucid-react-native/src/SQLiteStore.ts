@@ -6,7 +6,7 @@
 
 import * as SQLite from 'expo-sqlite';
 import type { SQLiteBindValue, SQLiteBindParams } from 'expo-sqlite';
-import type { LucidStore, LucidSchema, CrudEntry, TableDefinition } from '@dreamstack/lucid-core';
+import type { LucidStore, LucidSchema, CrudEntry, TableDefinition } from '@dreamstack-us/lucid-core';
 
 const DB_NAME = 'lucid.db';
 

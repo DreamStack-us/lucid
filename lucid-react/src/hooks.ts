@@ -6,7 +6,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useLucid } from './context';
-import type { CrudOperation } from '@dreamstack/lucid-core';
+import type { CrudOperation } from '@dreamstack-us/lucid-core';
 
 // ============================================================================
 // useLucidQuery - Read data from local store
