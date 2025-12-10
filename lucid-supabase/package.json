@@ -1,19 +1,20 @@
 {
   "name": "@dreamstack-us/lucid-supabase",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "type": "module",
   "description": "Supabase connector for Lucid.js - sync with Supabase backend",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     }
   },
@@ -28,7 +29,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack-us/lucid-core": "^0.0.1"
+    "@dreamstack-us/lucid-core": "^0.0.3"
   },
   "peerDependencies": {
     "@supabase/supabase-js": ">=2.0.0"
