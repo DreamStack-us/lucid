@@ -6,7 +6,7 @@ export default defineConfig({
     "schema/index": "src/schema/index.ts",
     "types/index": "src/types/index.ts",
   },
-  format: ["cjs", "esm"],
+  format: ["esm", "cjs"],
   dts: true,
   clean: true,
   sourcemap: true,
