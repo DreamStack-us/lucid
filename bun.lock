@@ -12,7 +12,7 @@
     },
     "lucid-core": {
       "name": "@dreamstack-us/lucid-core",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "devDependencies": {
         "tsup": "^8.3.5",
         "typescript": "~5.3.3",
@@ -24,9 +24,9 @@
     },
     "lucid-react": {
       "name": "@dreamstack-us/lucid-react",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "dependencies": {
-        "@dreamstack-us/lucid-core": "^0.0.1",
+        "@dreamstack-us/lucid-core": "^0.0.3",
       },
       "devDependencies": {
         "@types/node": "^24.10.2",
@@ -40,9 +40,9 @@
     },
     "lucid-react-native": {
       "name": "@dreamstack-us/lucid-react-native",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "dependencies": {
-        "@dreamstack-us/lucid-core": "^0.0.1",
+        "@dreamstack-us/lucid-core": "^0.0.3",
       },
       "devDependencies": {
         "@types/react": "^18.3.12",
@@ -57,9 +57,9 @@
     },
     "lucid-supabase": {
       "name": "@dreamstack-us/lucid-supabase",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "dependencies": {
-        "@dreamstack-us/lucid-core": "^0.0.1",
+        "@dreamstack-us/lucid-core": "^0.0.3",
       },
       "devDependencies": {
         "@supabase/supabase-js": "^2.46.0",
@@ -73,9 +73,9 @@
     },
     "lucid-trpc": {
       "name": "@dreamstack-us/lucid-trpc",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "dependencies": {
-        "@dreamstack-us/lucid-core": "^0.0.1",
+        "@dreamstack-us/lucid-core": "^0.0.3",
       },
       "devDependencies": {
         "@trpc/client": "^10.45.0",
@@ -89,9 +89,9 @@
     },
     "lucid-web": {
       "name": "@dreamstack-us/lucid-web",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "dependencies": {
-        "@dreamstack-us/lucid-core": "^0.0.1",
+        "@dreamstack-us/lucid-core": "^0.0.3",
         "localforage": "^1.10.0",
       },
       "devDependencies": {
@@ -1500,16 +1500,6 @@
     "@babel/traverse/@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
 
     "@babel/traverse--for-generate-function-map/@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
-
-    "@dreamstack-us/lucid-react/@dreamstack-us/lucid-core": ["@dreamstack-us/lucid-core@0.0.1", "", { "peerDependencies": { "zod": ">=3.0.0" } }, "sha512-UAfiVpVnBH0jKzzmFmzZuxJzr2gH7hvz347Mj5ZlVHey7Yz1A9fmRAJ7y17w2DCuh9PsQZE346jOpmuhpllUXw=="],
-
-    "@dreamstack-us/lucid-react-native/@dreamstack-us/lucid-core": ["@dreamstack-us/lucid-core@0.0.1", "", { "peerDependencies": { "zod": ">=3.0.0" } }, "sha512-UAfiVpVnBH0jKzzmFmzZuxJzr2gH7hvz347Mj5ZlVHey7Yz1A9fmRAJ7y17w2DCuh9PsQZE346jOpmuhpllUXw=="],
-
-    "@dreamstack-us/lucid-supabase/@dreamstack-us/lucid-core": ["@dreamstack-us/lucid-core@0.0.1", "", { "peerDependencies": { "zod": ">=3.0.0" } }, "sha512-UAfiVpVnBH0jKzzmFmzZuxJzr2gH7hvz347Mj5ZlVHey7Yz1A9fmRAJ7y17w2DCuh9PsQZE346jOpmuhpllUXw=="],
-
-    "@dreamstack-us/lucid-trpc/@dreamstack-us/lucid-core": ["@dreamstack-us/lucid-core@0.0.1", "", { "peerDependencies": { "zod": ">=3.0.0" } }, "sha512-UAfiVpVnBH0jKzzmFmzZuxJzr2gH7hvz347Mj5ZlVHey7Yz1A9fmRAJ7y17w2DCuh9PsQZE346jOpmuhpllUXw=="],
-
-    "@dreamstack-us/lucid-web/@dreamstack-us/lucid-core": ["@dreamstack-us/lucid-core@0.0.1", "", { "peerDependencies": { "zod": ">=3.0.0" } }, "sha512-UAfiVpVnBH0jKzzmFmzZuxJzr2gH7hvz347Mj5ZlVHey7Yz1A9fmRAJ7y17w2DCuh9PsQZE346jOpmuhpllUXw=="],
 
     "@expo/cli/@react-native/dev-middleware": ["@react-native/dev-middleware@0.81.5", "", { "dependencies": { "@isaacs/ttlcache": "^1.4.1", "@react-native/debugger-frontend": "0.81.5", "chrome-launcher": "^0.15.2", "chromium-edge-launcher": "^0.2.0", "connect": "^3.6.5", "debug": "^4.4.0", "invariant": "^2.2.4", "nullthrows": "^1.1.1", "open": "^7.0.3", "serve-static": "^1.16.2", "ws": "^6.2.3" } }, "sha512-WfPfZzboYgo/TUtysuD5xyANzzfka8Ebni6RIb2wDxhb56ERi7qDrE4xGhtPsjCL4pQBXSVxyIlCy0d8I6EgGA=="],
 
