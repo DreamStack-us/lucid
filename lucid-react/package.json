@@ -1,6 +1,6 @@
 {
   "name": "@dreamstack-us/lucid-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "description": "React hooks for Lucid.js - useLucid, useLucidQuery, etc.",
   "main": "dist/index.cjs",
