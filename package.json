@@ -7,7 +7,9 @@
     "lucid-core",
     "lucid-react",
     "lucid-react-native",
-    "lucid-supabase"
+    "lucid-supabase",
+    "lucid-web",
+    "lucid-trpc"
   ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces",
@@ -23,9 +25,12 @@
     "local-first",
     "sqlite",
     "supabase",
+    "trpc",
+    "indexeddb",
     "sync",
     "react-native",
-    "react"
+    "react",
+    "web"
   ],
   "author": "DreamStack",
   "license": "MIT"

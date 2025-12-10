@@ -7,4 +7,4 @@
 export { SQLiteStore } from './SQLiteStore';
 
 // Re-export core types for convenience
-export type { LucidStore, LucidSchema } from '@dreamstack/lucid-core';
+export type { LucidStore, LucidSchema } from '@dreamstack-us/lucid-core';
