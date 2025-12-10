@@ -20,7 +20,7 @@ import type {
   SyncStatus,
   UploadQueue,
   QueueProcessor,
-} from '@dreamstack/lucid-core';
+} from '@dreamstack-us/lucid-core';
 
 // ============================================================================
 // Context Types
@@ -108,7 +108,7 @@ export function LucidProvider({
   // Create upload queue
   const queue = useMemo(() => {
     // Import dynamically to avoid circular deps
-    const { UploadQueue } = require('@dreamstack/lucid-core');
+    const { UploadQueue } = require('@dreamstack-us/lucid-core');
     return new UploadQueue(store);
   }, [store]);
 

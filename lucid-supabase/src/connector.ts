@@ -10,8 +10,8 @@ import type {
   CrudBatch,
   LucidSchema,
   LucidStore,
-} from '@dreamstack/lucid-core';
-import { getSupabaseTableName, shouldSync, getTableCategory } from '@dreamstack/lucid-core';
+} from '@dreamstack-us/lucid-core';
+import { getSupabaseTableName, shouldSync, getTableCategory } from '@dreamstack-us/lucid-core';
 
 // ============================================================================
 // Connector Options
