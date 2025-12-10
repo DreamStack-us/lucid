@@ -1,6 +1,6 @@
 {
   "name": "@dreamstack-us/lucid-trpc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "tRPC connector for Lucid.js - bidirectional sync with tRPC backends",
   "main": "dist/index.cjs",
@@ -29,7 +29,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@dreamstack-us/lucid-core": "^0.0.3"
+    "@dreamstack-us/lucid-core": "^0.0.4"
   },
   "peerDependencies": {
     "@trpc/client": ">=10.0.0"
