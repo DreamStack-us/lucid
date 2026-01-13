@@ -1,0 +1,4 @@
+[submodule ".internal"]
+	path = .internal
+	url = git@github.com:DreamStack-us/secret-agents.git
+	branch = feat/DRE-453-lucid-agents
